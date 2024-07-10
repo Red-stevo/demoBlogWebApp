@@ -1,0 +1,19 @@
+.page-not-found {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.text-emoji {
+    display: flex;
+    flex-flow: column;
+}
+
+.not-found-text {
+    font-family: "Tapestry", "acme", serif;
+    font-weight: 500;
+    font-size: 35px;
+    font-style: normal;
+    margin-left: 250px;
+}
