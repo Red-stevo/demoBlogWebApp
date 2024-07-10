@@ -1,10 +1,14 @@
-import {Container, Navbar} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import './../Styling/HeaderStyles.css';
 const HomeHeader = () => {
     return(
-        <Navbar className="home-navbar">
-            <Container fluid>
-                <Navbar.Brand id={"brand"} href="#home">BloGit</Navbar.Brand>
+        <Navbar expand={"lg"} className="home-navbar">
+            <Container fluid >
+                <Navbar.Brand id={"brand"} href="home">BloGit</Navbar.Brand>
+                <Nav>
+                    <Nav.Link id={"login"} href={"login-page"}>Login</Nav.Link>
+                    <Nav.Link href={"#reg page"}>Get Started</Nav.Link>
+                </Nav>
             </Container>
         </Navbar>
     );

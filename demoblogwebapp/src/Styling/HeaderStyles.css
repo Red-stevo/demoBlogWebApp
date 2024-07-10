@@ -7,8 +7,22 @@
 #brand {
     font-family: "Tapestry", "acme", serif;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     font-style: normal;
     padding: 0;
+}
+
+#login {
+    font-family: "acme", serif, sans-serif;
+    font-size: 18px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#login:hover{
+    color: white;
 }
