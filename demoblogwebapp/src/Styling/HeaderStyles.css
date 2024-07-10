@@ -1,0 +1,14 @@
+.home-navbar {
+    position: static;
+    margin-bottom: 10px;
+    background-color: rgba(9, 28, 236, 0.66);
+}
+
+#brand {
+    font-family: "Tapestry", "acme", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+    padding: 0;
+}
