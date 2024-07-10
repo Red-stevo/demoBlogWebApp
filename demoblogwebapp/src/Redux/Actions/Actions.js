@@ -4,8 +4,7 @@ import {ActionTypes} from "../ActionTypes/ActionTypes.js";
 
 export const fetchPost = () => async (dispatch, getState) => {
         const  response = await resources.get("/posts");
-        dispatch(ActionTypes.FETCH_POST, response.data);
-    }
+        dispatch(setPosts(response.data));
 }
 
 export const setPosts = (posts) => {
