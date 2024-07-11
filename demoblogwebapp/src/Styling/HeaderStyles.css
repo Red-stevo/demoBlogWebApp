@@ -1,7 +1,7 @@
 .home-navbar {
     position: static;
     margin-bottom: 10px;
-    background-color: rgba(9, 28, 236, 0.66);
+    background-color: rgba(9, 28, 236, 0.33);
 }
 
 #brand {
@@ -14,6 +14,7 @@
 }
 
 #login {
+    font-weight: 600;
     font-family: "acme", serif, sans-serif;
     font-size: 18px;
     border: solid 1px black;
@@ -25,4 +26,9 @@
 
 #login:hover{
     color: white;
+}
+
+#get-started {
+    color: white;
+    font-weight: 600;
 }

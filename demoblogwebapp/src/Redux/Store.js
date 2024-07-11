@@ -8,5 +8,5 @@ const reducers = combineReducers({
 });
 
 // eslint-disable-next-line no-undef
-const composeEnhancer = Window_REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose;
-export const Store = createStore(reducers, composeEnhancer(applyMiddleware(thunk)));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+export const Store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
