@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {fetchPost} from "../Redux/Actions/Actions.js";
-import {Card} from "react-bootstrap";
+import {Card, Spinner} from "react-bootstrap";
 
 const  UserHomePage = () => {
     const posts = useSelector(state => state.posts);
@@ -12,23 +12,26 @@ const  UserHomePage = () => {
     }
 
     useEffect(() => {
-        getPosts();
-    }, []);
+        if(!posts)
+            getPosts();
+        console.log("Posts => ",posts)
+    }, [posts]);
 
 
     return(
-        <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-        </Card>
+       <>
+           {posts ? posts.map(({id, title, body,link, comment_count}) => { return(
+                   <Card key={id} style={{ width: '18rem' }}>
+                       <Card.Body>
+                           <Card.Title>{title}</Card.Title>
+                           <Card.Text>
+                               {body}
+                           </Card.Text>
+                           <Card.Link href={link}>Read More</Card.Link>
+                       </Card.Body>
+                   </Card>
+               );}) : <Spinner animation={"border"}/>}
+       </>
     );
 }
 
