@@ -20,9 +20,9 @@ const  UserHomePage = () => {
 
 
     return(
-       <>
+       <div id={"posts"}>
            {posts.length >= 1 ? posts.map(({id, title, body,link, comment_count}) => { return(
-                   <Card key={id} style={{ width: '18rem' }}>
+                   <Card id="post" key={id} style={{ width: '18rem' }}>
                        <Card.Body>
                            <Card.Title>{title}</Card.Title>
                            <Card.Text>
@@ -32,7 +32,7 @@ const  UserHomePage = () => {
                        </Card.Body>
                    </Card>
            );}) : <div className={"spinner"}><Spinner animation={"border"} /></div>}
-       </>
+       </div>
     );
 }
 

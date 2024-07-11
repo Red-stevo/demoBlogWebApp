@@ -4,3 +4,15 @@
     align-items: center;
     justify-content: center;
 }
+
+#post {
+    margin: 20px;
+
+}
+#posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
