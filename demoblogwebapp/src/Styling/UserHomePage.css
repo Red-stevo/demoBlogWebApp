@@ -7,8 +7,14 @@
 
 #post {
     margin: 20px;
-
+    color: #747bff;
 }
+
+#post:hover {
+    background-color: #e0d7d7;
+}
+
+
 #posts {
     display: flex;
     flex-direction: row;
