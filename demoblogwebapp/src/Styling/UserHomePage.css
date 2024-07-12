@@ -25,36 +25,11 @@
 
 #read {
     text-decoration: none;
-    border: solid grey 1px;
+    border: solid grey 2px;
     padding: 5px 15px;
     border-radius: 8px;
     color: white;
     background-color: #646cff;
     font-weight: 600;
-    animation: borderPlay linear 8s infinite;
-}
 
-#read:hover{
-   animation: none;
-}
-
-@keyframes borderPlay {
-    0%{
-        border-left: solid #0000ff 4px;
-        border-top: solid #ff00ff 4px;
-        border-right: solid #00b7f8 4px;
-        border-bottom: solid #ff0015 4px;
-    }
-
-    30% {
-       border-top: solid #ff00ff 4px;
-    }
-
-    65% {
-        border-right: solid #00b7f8 4px;
-    }
-
-    100% {
-        border-bottom: solid #ff0015 4px;
-    }
 }
