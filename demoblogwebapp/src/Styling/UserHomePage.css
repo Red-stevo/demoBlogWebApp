@@ -22,3 +22,34 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+#read {
+    text-decoration: none;
+    border: solid grey 1px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: white;
+    background-color: #646cff;
+    font-weight: 600;
+}
+
+#read:hover{
+    animation: borderPlay linear 8s infinite;
+}
+
+@keyframes borderPlay {
+    0%{
+        /*border: solid blue 2px;*/
+        background: #0000ff;
+    }
+
+    50% {
+       /* border: solid purple 2px;*/
+        background: #f802f8;
+    }
+
+    100% {
+        /*border: solid greenyellow 2px;*/
+        background: deepskyblue;
+    }
+}
