@@ -21,7 +21,7 @@ const  UserHomePage = () => {
 
     return(
        <div id={"posts"}>
-           {posts.length >= 1 ? posts.map(({id, title, body,link, comment_count}) => { return(
+           {posts.length >= 1 ? posts.map(({id, title, body,link}) => { return(
                    <Card id="post" key={id} style={{ width: '18rem' }}>
                        <Card.Body>
                            <Card.Title>{title}</Card.Title>
