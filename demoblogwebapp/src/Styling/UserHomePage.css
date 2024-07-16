@@ -32,3 +32,8 @@
     background-color: #646cff;
     font-weight: 600;
 }
+
+#comments-count {
+    margin-left: 30%;
+    text-decoration: none;
+}
