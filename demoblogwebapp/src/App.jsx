@@ -5,6 +5,7 @@ import Home from "./Pages/Home.jsx";
 import UserHomePage from "./Pages/UserHomePage.jsx";
 import LoginPage from "./Pages/LoginPage.jsx";
 import UserHomeHeader from "./Components/UserHomeHeader.jsx";
+import CommentsPage from "./Pages/CommentsPage.jsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
               </Route>
               <Route path={"user"} element={<UserHomeHeader />}>
                 <Route path={"user"} element={<UserHomePage />} />
+                  <Route path={"comments/:post"} element={<CommentsPage />}/>
               </Route>
               <Route path={"*"} element={<NotFound />} />
           </Routes>
