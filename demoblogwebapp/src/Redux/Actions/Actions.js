@@ -7,12 +7,14 @@ export const fetchPost = () => async (dispatch) => {
         dispatch({type:ActionTypes.FETCH_POST, payload:response.data});
 }
 
+/*
 export const setPosts = (posts) => {
     return{
         type: ActionTypes.FETCH_POST,
         payload:posts
     }
 }
+*/
 
 export const fetchComments = (postId) =>
     async (dispatch) => {

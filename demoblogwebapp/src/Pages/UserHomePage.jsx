@@ -4,7 +4,6 @@ import {fetchPost} from "../Redux/Actions/Actions.js";
 import {Card, CardLink, Spinner} from "react-bootstrap";
 import "./../Styling/UserHomePage.css";
 import {LiaComment} from "react-icons/lia";
-;
 const  UserHomePage = () => {
     const posts = useSelector(state => state.Posts);
     const dispatch = useDispatch();

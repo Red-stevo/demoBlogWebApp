@@ -15,7 +15,7 @@ const CommentsPage = () => {
     useEffect(() => {
       dispatch(fetchComments(path));
       updateLoader();
-    }, []);
+    }, [path]);
 
 
     const updateLoader = () => {
@@ -40,5 +40,4 @@ const CommentsPage = () => {
         </>
     );
 }
-
 export default CommentsPage;
