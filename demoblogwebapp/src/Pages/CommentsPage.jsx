@@ -1,12 +1,13 @@
 import {useEffect} from "react";
 import {useParams} from "react-router-dom";
+import {fetchComments} from "../Redux/Actions/Actions.js";
 
 const CommentsPage = () => {
     const path = useParams();
 
 
     useEffect(() => {
-        console.log(path);
+       fetchComments(path.post)
     }, []);
 
     return(
