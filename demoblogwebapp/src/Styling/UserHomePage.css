@@ -11,7 +11,7 @@
 }
 
 #post:hover {
-    background-color: #e0d7d7;
+    background-color: rgba(224, 215, 215, 0.21);
 }
 
 
@@ -34,6 +34,20 @@
 }
 
 #comments-count {
-    margin-left: 30%;
+    font-weight: 600;
+    margin-left: 27%;
     text-decoration: none;
+}
+
+#comments-count:hover {
+    cursor: pointer;
+}
+
+#comments-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.comments-number {
+    color: #0698f3;
 }

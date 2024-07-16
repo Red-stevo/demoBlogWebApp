@@ -4,7 +4,7 @@ import {Outlet} from "react-router-dom";
 const UserHomeHeader = () => {
     return(
         <>
-            <Navbar>
+            <Navbar expand={"md"}>
                 <Navbar.Brand>
                     UserName:
                 </Navbar.Brand>
