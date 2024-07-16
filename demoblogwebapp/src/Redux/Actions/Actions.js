@@ -17,6 +17,7 @@ export const setPosts = (posts) => {
 export const fetchComments = (postId) =>
     async (dispatch) => {
         const response = await resources.get("/comments");
-        const data = response.data.filter((comment) => comment.postId === postId);
+        const data = response.data.filter(comment => comment.postId === parseInt(postId.post));
+        console.log("comments",data);
         dispatch({type:ActionTypes.FETCH_COMMENTS, payload:data});
     }
