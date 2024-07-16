@@ -31,7 +31,7 @@ const  UserHomePage = () => {
                            </Card.Text>
                            <Card.Text>
                                <Card.Link href={link} id={"read"}>Read More</Card.Link>
-                               <CardLink href={"#"} id={"comments-count"}> <LiaComment id={"comments-icon"}/>
+                               <CardLink href={`comments/${id}`} id={"comments-count"}> <LiaComment id={"comments-icon"}/>
                                    <sup className={"comments-number"}>{comment_count}</sup></CardLink>
                            </Card.Text>
                        </Card.Body>

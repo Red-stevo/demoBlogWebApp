@@ -9,3 +9,4 @@ export const storePostState = (state = initialState, {type, payload}) => {
     else
         return state;
 }
+
