@@ -53,6 +53,9 @@
 }
 
 #user-nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     font-weight: 500;
     background-color: rgba(0, 19, 255, 0.31);
 }
