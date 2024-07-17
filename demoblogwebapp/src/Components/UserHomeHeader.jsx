@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 import "./../Styling/UserHomePage.css";
 const UserHomeHeader = () => {
     return(
-        <>
+        <div>
             <Navbar expand={"md"} id={"user-nav-bar"}>
                 <Navbar.Brand id={"user-nav-brand"}>
                     UserName:
@@ -13,8 +13,8 @@ const UserHomeHeader = () => {
                     <NavLink id={"logout"} href={"#logout"}>Logout</NavLink>
                 </Navbar.Text>
             </Navbar>
-            <Outlet />
-        </>
+            <Outlet id={"user-home-body"}/>
+        </div>
     );
 }
 
