@@ -4,6 +4,7 @@ import {fetchComments} from "../Redux/Actions/Actions.js";
 import {useDispatch, useSelector} from "react-redux";
 import {Card, Spinner} from "react-bootstrap";
 import "./../Styling/UserHomePage.css"
+import {VscCommentDraft} from "react-icons/vsc";
 
 const CommentsPage = () => {
     const comments = useSelector(state => state.comments)
@@ -29,14 +30,13 @@ const CommentsPage = () => {
         <div id={"post-comments"}>
             {comments.length > 0? comments.map((({id, name, email, body}) => {
                     return(
-                        <Card key={id}>
+                        <Card key={id} id={"comment"}>
                             <Card.Title>{name}</Card.Title>
                             <Card.Body>
                                 {body}
                             </Card.Body>
                             <Card.Footer>{email}</Card.Footer>
                         </Card>
-
                     )})): load ? <Spinner animation={"border"} /> : <h1>No Comments Found‼️‼️‼️‼️</h1>}
         </div>
     );

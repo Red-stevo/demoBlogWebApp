@@ -79,5 +79,19 @@
 
 
 #outlet {
-    margin-top: 70px;
+    margin-top: 56px;
+    ;
+}
+
+#post-comments {
+    margin: 0 20px 0 20px;
+    padding: 10px;
+
+}
+
+#comment {
+    border: none;
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: rgba(232, 200, 200, 0.4);
 }
