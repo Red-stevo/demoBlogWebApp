@@ -64,7 +64,8 @@
 #user-hom-icons {
     display: flex;
     width: 90%;
-    gap: 85%;
+    gap: 80%;
+    font-size: 18px;
 }
 
 #user-nav-brand {
@@ -73,7 +74,7 @@
     font-family: "Tapestry", "acme", serif;
 }
 
-#logout:hover, #companies:hover{
+#logout:hover, #companies:hover, #home-user:hover{
     color: rgba(255, 255, 255, 0.62);
 }
 
@@ -101,4 +102,9 @@
     width: 60%;
     background-color: transparent;
     box-shadow: 4px 8px 15px rgba(0, 19, 255, 0.41);
+}
+
+#navigators {
+    display: flex;
+    gap: 20px;
 }

@@ -9,7 +9,10 @@ const UserHomeHeader = () => {
                     UserName:
                 </Navbar.Brand>
                 <Navbar.Text id={"user-hom-icons"}>
-                    <NavLink id={"companies"} href={"#companies"}>Companies</NavLink>
+                    <div id={"navigators"}>
+                        <NavLink id={"home-user"} href={"/user/user"}>Home</NavLink>
+                        <NavLink id={"companies"} href={"#companies"}>Companies</NavLink>
+                    </div>
                     <NavLink id={"logout"} href={"#logout"}>Logout</NavLink>
                 </Navbar.Text>
             </Navbar>
