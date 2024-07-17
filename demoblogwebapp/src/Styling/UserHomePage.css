@@ -84,13 +84,15 @@
 }
 
 #post-comments {
+    min-height: 90vh;
     margin: 0 20px 0 20px;
     padding: 20px;
-    background-image: url("./../assets/comments-page.jpg");
+    background-image: url("./../assets/comments-page.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-x: 88%;
+    background-position-y: 60%;
     background-size: 42%;
-    background-position: bottom right;
 }
 
 #comment {
