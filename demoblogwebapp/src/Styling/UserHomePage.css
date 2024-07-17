@@ -86,12 +86,17 @@
 #post-comments {
     margin: 0 20px 0 20px;
     padding: 20px;
+    background-image: url("./../assets/comments-page.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 42%;
+    background-position: bottom right;
 }
 
 #comment {
     border: none;
     margin-bottom: 20px;
     width: 60%;
-    background-color: rgba(248, 243, 243, 0.4);
+    background-color: transparent;
     box-shadow: 4px 8px 15px rgba(0, 19, 255, 0.41);
 }
