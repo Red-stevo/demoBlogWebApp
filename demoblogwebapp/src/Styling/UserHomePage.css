@@ -54,6 +54,7 @@
 
 #user-nav-bar {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
     font-weight: 500;
@@ -74,4 +75,9 @@
 
 #logout:hover, #companies:hover{
     color: rgba(255, 255, 255, 0.62);
+}
+
+
+#outlet {
+    margin-top: 70px;
 }

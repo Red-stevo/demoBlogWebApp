@@ -13,7 +13,9 @@ const UserHomeHeader = () => {
                     <NavLink id={"logout"} href={"#logout"}>Logout</NavLink>
                 </Navbar.Text>
             </Navbar>
-            <Outlet id={"user-home-body"}/>
+            <div id={"outlet"}>
+            <Outlet />
+            </div>
         </div>
     );
 }
