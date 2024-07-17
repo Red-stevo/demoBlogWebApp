@@ -51,3 +51,24 @@
 .comments-number {
     color: #0698f3;
 }
+
+#user-nav-bar {
+    font-weight: 500;
+    background-color: rgba(0, 19, 255, 0.31);
+}
+
+#user-hom-icons {
+    display: flex;
+    width: 90%;
+    gap: 85%;
+}
+
+#user-nav-brand {
+    margin-left: 6px;
+    width:10%;
+    font-family: "Tapestry", "acme", serif;
+}
+
+#logout:hover, #companies:hover{
+    color: rgba(255, 255, 255, 0.62);
+}
