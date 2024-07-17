@@ -85,13 +85,13 @@
 
 #post-comments {
     margin: 0 20px 0 20px;
-    padding: 10px;
-
+    padding: 20px;
 }
 
 #comment {
     border: none;
     margin-bottom: 20px;
     width: 60%;
-    background-color: rgba(232, 200, 200, 0.4);
+    background-color: rgba(248, 243, 243, 0.4);
+    box-shadow: 4px 8px 15px rgba(0, 19, 255, 0.41);
 }
