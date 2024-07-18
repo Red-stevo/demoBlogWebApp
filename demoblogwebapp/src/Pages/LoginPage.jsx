@@ -31,7 +31,7 @@ const LoginPage = () => {
     useEffect(() => {
         if(userLoginDetails.isLoggedIn)
             navigate("/user/user");
-    }, [loginDetails]);
+    }, [userLoginDetails]);
 
     const onSubmitLogin = (e) => {
         e.preventDefault();
