@@ -3,6 +3,8 @@
     height: 85vh;
     align-content: center;
     justify-content: center;
+    background-image: url("./../assets/loginpagebackground.jpeg");
+    background-repeat: no-repeat;
 }
 
 #login-form {

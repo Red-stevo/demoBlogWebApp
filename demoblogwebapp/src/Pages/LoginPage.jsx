@@ -14,7 +14,6 @@ const LoginPage = () => {
                     <Form.Label id={"password-label"} htmlFor={"password"}>Password </Form.Label>
                     <Form.Control id={"password"} />
                 </Form.Group>
-
                 <Button className={"m-2"} id={"login-button"} type={"submit"}>login</Button>
             </Form>
         </div>
