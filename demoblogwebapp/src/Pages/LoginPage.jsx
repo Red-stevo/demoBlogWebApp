@@ -7,7 +7,7 @@ const LoginPage = () => {
             <Form id={"login-form"}>
                 <Form.Label>Login</Form.Label>
                 <Form.Group className={"p-2"}>
-                    <Form.Label id={"username-id"} htmlFor={"username"}>Username </Form.Label>
+                    <Form.Label id={"username-label"} htmlFor={"username"}>Username </Form.Label>
                     <Form.Control id={"username"}/>
                 </Form.Group>
                 <Form.Group className={"p-2"}>

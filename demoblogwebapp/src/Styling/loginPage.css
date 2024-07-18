@@ -6,9 +6,16 @@
 }
 
 #login-form {
+    font-weight: 500;
     margin-top: 20px;
-    width: 40%;
+    width: 30%;
     height: 70%;
     padding: 20px;
-    box-shadow: 0 10px 10px rgba(0, 84, 255, 0.35);
+    box-shadow: 0 10px 10px 15px rgba(0, 84, 255, 0.35);
+    border-radius: 20px;
+}
+
+#username-label, #password-label, #login-button {
+    font-family: "Acme",sans-serif;
+    font-size: 20px;
 }
