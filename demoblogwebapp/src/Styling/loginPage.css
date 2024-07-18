@@ -1,0 +1,14 @@
+.login-page {
+    display: flex;
+    height: 85vh;
+    align-content: center;
+    justify-content: center;
+}
+
+#login-form {
+    margin-top: 20px;
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 84, 255, 0.35);
+}
