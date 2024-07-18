@@ -2,9 +2,15 @@ import {Button, Form} from "react-bootstrap";
 import "./../Styling/loginPage.css"
 import {useEffect, useState} from "react";
 import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
+import {userLogin} from "../Redux/Actions/Actions.js";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
+    const userLoginDetails = useSelector((state) => state.userDetails)
     const [eye, setEye] = useState(false);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [passwordFieldType, setPasswordFieldType] = useState("password")
     const [loginDetails, setLoginDetails] = useState({
         username:"",
@@ -22,10 +28,16 @@ const LoginPage = () => {
         updatePasswordInputField();
     }, [eye]);
 
+    useEffect(() => {
+        if(userLoginDetails.isLoggedIn) {
+            setLoginDetails({username:"", password:"",})
+            navigate("/user/user");
+        }
+    }, [loginDetails]);
 
     const onSubmitLogin = (e) => {
         e.preventDefault();
-
+        dispatch(userLogin(loginDetails));
     }
 
 
