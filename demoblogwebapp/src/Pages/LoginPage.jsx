@@ -1,19 +1,37 @@
 import {Button, Form} from "react-bootstrap";
 import "./../Styling/loginPage.css"
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
 
 const LoginPage = () => {
     const [eye, setEye] = useState(false);
+    const [passwordFieldType, setPasswordFieldType] = useState("password")
     const [loginDetails, setLoginDetails] = useState({
         username:"",
         password:"",
     });
 
+    const  updatePasswordInputField = () => {
+        if(eye)
+            setPasswordFieldType("text");
+        else
+            setPasswordFieldType("password");
+    }
+
+    useEffect(() => {
+        updatePasswordInputField();
+    }, [eye]);
+
+
+    const onSubmitLogin = (e) => {
+        e.preventDefault();
+
+    }
+
 
     return (
         <div className={"login-page"}>
-            <Form id={"login-form"}>
+            <Form id={"login-form"} onSubmit={(e) => onSubmitLogin(e)}>
                 <Form.Label id={"login-title"}>Login</Form.Label>
                 <Form.Group className={"p-2"}>
                     <Form.Label id={"username-label"} htmlFor={"username"}>Username </Form.Label>
@@ -24,7 +42,7 @@ const LoginPage = () => {
                 <Form.Group className={"p-2"}>
                     <Form.Label id={"password-label"} htmlFor={"password"}>Password </Form.Label>
                     <div className={"input-eye"}>
-                        <Form.Control type={"password"} id={"password"} value={loginDetails.password}
+                        <Form.Control type={`${passwordFieldType}`} id={"password"} value={loginDetails.password}
                                       onChange={(e) =>
                                           setLoginDetails({...loginDetails, password: e.target.value})}/>
                         {eye ? <Button id={"eye-open"} onClick={() => setEye(!eye)}><FaRegEyeSlash /></Button> :
