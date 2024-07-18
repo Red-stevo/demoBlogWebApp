@@ -1,8 +1,10 @@
 import {Button, Form} from "react-bootstrap";
 import "./../Styling/loginPage.css"
 import {useState} from "react";
+import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
 
 const LoginPage = () => {
+    const [eye, setEye] = useState(false);
     const [loginDetails, setLoginDetails] = useState({
         username:"",
         password:"",
@@ -21,10 +23,13 @@ const LoginPage = () => {
                 </Form.Group>
                 <Form.Group className={"p-2"}>
                     <Form.Label id={"password-label"} htmlFor={"password"}>Password </Form.Label>
-                    <Form.Control type={"password"} id={"password"} value={loginDetails.password}
-                                  onChange={(e) =>
-                                      setLoginDetails({...loginDetails, password: e.target.value})}/>
-                    <div> </div>
+                    <div className={"input-eye"}>
+                        <Form.Control type={"password"} id={"password"} value={loginDetails.password}
+                                      onChange={(e) =>
+                                          setLoginDetails({...loginDetails, password: e.target.value})}/>
+                        {eye ? <Button id={"eye-open"} onClick={() => setEye(!eye)}><FaRegEyeSlash /></Button> :
+                            <Button id={"eye-closed"} onClick={() => setEye(!eye)}><FaRegEye /></Button>}
+                    </div>
                 </Form.Group>
                 <Button className={"m-2"} id={"login-button"} type={"submit"}>login</Button>
             </Form>
