@@ -29,15 +29,14 @@ const LoginPage = () => {
     }, [eye]);
 
     useEffect(() => {
-        if(userLoginDetails.isLoggedIn) {
-            setLoginDetails({username:"", password:"",})
+        if(userLoginDetails.isLoggedIn)
             navigate("/user/user");
-        }
     }, [loginDetails]);
 
     const onSubmitLogin = (e) => {
         e.preventDefault();
         dispatch(userLogin(loginDetails));
+        setLoginDetails({username:"", password:"",});
     }
 
 
