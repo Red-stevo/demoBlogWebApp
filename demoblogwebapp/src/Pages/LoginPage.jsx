@@ -14,7 +14,7 @@ const LoginPage = () => {
     return (
         <div className={"login-page"}>
             <Form id={"login-form"}>
-                <Form.Label>Login</Form.Label>
+                <Form.Label id={"login-title"}>Login</Form.Label>
                 <Form.Group className={"p-2"}>
                     <Form.Label id={"username-label"} htmlFor={"username"}>Username </Form.Label>
                     <Form.Control id={"username"} value={loginDetails.username}

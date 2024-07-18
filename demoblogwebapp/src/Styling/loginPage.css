@@ -25,3 +25,28 @@
 .input-eye {
     display: flex;
 }
+
+#eye-open, #eye-closed {
+    background-color: transparent;
+    border: none;
+    color: rgba(26, 26, 26, 0.52);
+    font-weight: 400;
+}
+
+#login-button {
+    background-color: rgba(0, 12, 255, 0.56);
+    border: none;
+}
+
+#login-button:hover {
+    background-color: rgba(0, 12, 255, 0.71);
+}
+
+#login-title {
+        font-family: "Tapestry", "acme", serif;
+        font-weight: 800;
+        font-size: 28px;
+        font-style: normal;
+        padding: 0;
+    margin-left: 30%;
+}
