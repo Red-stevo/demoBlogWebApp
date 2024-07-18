@@ -29,7 +29,7 @@
 #eye-open, #eye-closed {
     background-color: transparent;
     border: none;
-    color: rgba(26, 26, 26, 0.52);
+    color: rgba(0, 58, 255, 0.71);
     font-weight: 400;
 }
 
@@ -43,10 +43,9 @@
 }
 
 #login-title {
-        font-family: "Tapestry", "acme", serif;
-        font-weight: 800;
-        font-size: 28px;
-        font-style: normal;
-        padding: 0;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    font-family: "Tapestry", "acme", serif;
+    font-weight: 800;
+    font-size: 28px;
 }
